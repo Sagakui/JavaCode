@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/skillbox?allowPublicKeyRetrieval=true&amp;useSSL=false</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">6843242793Dimon!</property>
+        <!-- JDBC connection pool settings ... using built-in test pool -->
+        <property name="connection.pool_size">10</property>
+        <!-- Select our SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Echo the SQL to stdout -->
+        <property name="show_sql">true</property>
+        <!-- Set the current session context -->
+        <property name="current_session_context_class">thread</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+
+        <mapping class="entities.Course"/>
+        <mapping class="entities.Student"/>
+        <mapping class="entities.Subscription"/>
+        <mapping class="entities.Teacher"/>
+        <mapping class="entities.PurchaseList"/>
+        <mapping class="entities.LinkedPurchaseList"/>
+        <mapping class="ck.PurchaseListKey"/>
+        <mapping class="ck.SubscriptionKey"/>
+        <mapping class="ck.LinkedPurchaseListKey"/>
+    </session-factory>
+</hibernate-configuration>
