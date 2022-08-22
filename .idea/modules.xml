@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ConsoleCustomerList/ConsoleCustomerList.iml" filepath="$PROJECT_DIR$/ConsoleCustomerList/ConsoleCustomerList.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaCode.iml" filepath="$PROJECT_DIR$/.idea/JavaCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyFirstBot/MyFirstBot.iml" filepath="$PROJECT_DIR$/MyFirstBot/MyFirstBot.iml" />
     </modules>
   </component>
 </project>
